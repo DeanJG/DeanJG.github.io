@@ -5,7 +5,39 @@
     <meta name="viewport" content="width>, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .button {
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .button:hover {background-color: #3e8e41}
+    
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
 <body>
-    <button type="button">Click Me!</button>
+        <button onclick="myFunction()" class="button" type="button">Click Me!</button>
+        <p id="demo"></p>
+        
+        <button onclick="myFunction()" class="button" type="button">No Me!</button>
+        <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "I Win!";
+        }
+    </script>
 </body>
 </html>
